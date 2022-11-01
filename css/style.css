@@ -802,3 +802,13 @@ ul {
   top: 29px;
   left: 12px;
 }
+
+.form-field:focus-within > .form-icon {
+  fill: var(--accent-color);
+}
+.form-field:focus-within > input {
+  border: 4px solid var(--accent-color);
+}
+.contract {
+  color: var(--accent-color);
+}
