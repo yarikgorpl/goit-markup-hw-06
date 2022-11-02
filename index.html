@@ -363,7 +363,7 @@
           </button>
 
           <form class="form contact-form">
-            <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
             <div class="form-field">
               <label for="text">Ім'я</label>
               <svg class="form-icon" width="18" height="18">
@@ -385,10 +385,10 @@
               </svg>
               <input type="email" name="email" id="email" />
             </div>
-            <div class="form-field">
+            <div class="form-text">
               <label for="comments">Коментар </label
               ><textarea
-                class="form-comment"
+                class="form-text-comment"
                 name="comments"
                 id="comments"
                 placeholder="Введіть текст"
@@ -397,7 +397,11 @@
             <div class="policy">
               <label class="policy-label"
                 ><input class="checkbox" type="checkbox" name="policy" value="policy" />
-                <span class="policy-icon"></span>
+                <span
+                  ><svg class="policy-icon" width="16" height="15">
+                    <use href="./image/icons.svg#icon-icon-check"></use>
+                  </svg>
+                </span>
                 Погоджуюся з розсилкою та приймаю
                 <a class="contract" href="">Умови договору</a>
               </label>
@@ -462,17 +466,19 @@
             </li>
           </ul>
         </div>
-        <form>
+        <form class="footer-form">
           <p class="footer-social-text">Підпишіться на розсилку</p>
-          <label>
-            <input type="email" placeholder="E-mail" />
-          </label>
-          <button type="submit">
-            Підписатися
-            <svg width="24" height="24">
-              <use href="./image/icons.svg#icon-icon-send"></use>
-            </svg>
-          </button>
+          <div class="footer-form-box">
+            <label>
+              <input class="footer-form-input" type="email" placeholder="E-mail" />
+            </label>
+            <button class="footer-form-button" type="submit">
+              Підписатися
+              <svg class="footer-form-img" width="24" height="24">
+                <use href="./image/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
