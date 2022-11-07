@@ -386,7 +386,7 @@
               <input type="email" name="email" id="email" />
             </div>
             <div class="form-text">
-              <label for="comments">Коментар </label>
+              <label class="form-text-title" for="comments">Коментар </label>
               <textarea
                 class="form-text-comment"
                 name="comments"
@@ -469,9 +469,8 @@
         <form class="footer-form">
           <p class="footer-social-text">Підпишіться на розсилку</p>
           <div class="footer-form-box">
-            <label>
-              <input class="footer-form-input" type="email" placeholder="E-mail" />
-            </label>
+            <input class="footer-form-input" type="email" aria-label="email" placeholder="E-mail"/>
+
             <button class="footer-form-button" type="submit">
               Підписатися
               <svg class="footer-form-img" width="24" height="24">
